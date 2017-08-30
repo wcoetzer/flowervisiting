@@ -1,0 +1,1229 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#"
+     xml:base="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_HasAssociation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_HasAssociation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_HasForagingAssociation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_HasForagingAssociation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_HasAssociation"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasForagingArthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_HasForagingInteraction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_HasForagingInteraction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasForagingArthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_NectarForagesIn_Association -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_NectarForagesIn_Association">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_HasForagingAssociation"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasNectarForaging_Arthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_NectarForagesIn_Interaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_NectarForagesIn_Interaction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_HasForagingInteraction"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasNectarForaging_Arthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_OilForagesIn_Association -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_OilForagesIn_Association">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_HasForagingAssociation"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasOilForaging_Arthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_OilForagesIn_Interaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_OilForagesIn_Interaction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_HasForagingInteraction"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasOilForaging_Arthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_PollenForagesIn_Association -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_PollenForagesIn_Association">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_HasForagingAssociation"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPollenForaging_Arthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_PollenForagesIn_Interaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_PollenForagesIn_Interaction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_HasForagingInteraction"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasPollenForaging_Arthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_TransfersPollenIn_Association -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_TransfersPollenIn_Association">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_HasAssociation"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPollenTransfer_Arthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_TransfersPollenIn_Interaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_TransfersPollenIn_Interaction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arthropod_HasForagingInteraction"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasPollenTransfer_Arthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasArthropod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasArthropod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasForagingArthropod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasForagingArthropod">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasArthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasForagingPlant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasForagingPlant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPlant"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plant_HasForagingAssociation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasNectarForaging_Arthropod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasNectarForaging_Arthropod">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasForagingArthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasNectarForaging_Plant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasNectarForaging_Plant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasForagingPlant"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantNectar_IsForagedIn_Association"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasOilForaging_Arthropod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasOilForaging_Arthropod">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasForagingArthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasOilForaging_Plant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasOilForaging_Plant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasForagingPlant"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantOil_IsForagedIn_Association"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPlant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPlant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPollenForaging_Arthropod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPollenForaging_Arthropod">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasForagingArthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPollenForaging_Plant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPollenForaging_Plant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasForagingPlant"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantPollen_IsForagedIn_Association"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPollenTransfer_Arthropod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPollenTransfer_Arthropod">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasArthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPollenTransfer_Plant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPollenTransfer_Plant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasForagingPlant"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantPollen_IsTransferredIn_Association"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#has"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#hasInteractionPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#hasInteractionPart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasForagingArthropod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasForagingArthropod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasForagingPlant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasForagingPlant">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plant_HasForagingInteraction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasNectarForaging_Arthropod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasNectarForaging_Arthropod">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasForagingArthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasNectarForaging_Plant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasNectarForaging_Plant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasForagingPlant"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantNectar_IsForagedIn_Interaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasOilForaging_Arthropod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasOilForaging_Arthropod">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasForagingArthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasOilForaging_Plant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasOilForaging_Plant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasForagingPlant"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantOil_IsForagedIn_Interaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasPollenForaging_Arthropod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasPollenForaging_Arthropod">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasForagingArthropod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasPollenForaging_Plant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasPollenForaging_Plant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasForagingPlant"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantPollen_IsForagedIn_Interaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasPollenTransfer_Arthropod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasPollenTransfer_Arthropod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasPollenTransfer_Plant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasPollenTransfer_Plant">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantPollen_IsTransferredIn_Interaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantNectar_IsForagedIn_Association -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantNectar_IsForagedIn_Association">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plant_HasForagingAssociation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantNectar_IsForagedIn_Interaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantNectar_IsForagedIn_Interaction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plant_HasForagingInteraction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantOil_IsForagedIn_Association -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantOil_IsForagedIn_Association">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plant_HasForagingAssociation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantOil_IsForagedIn_Interaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantOil_IsForagedIn_Interaction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plant_HasForagingInteraction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantPollen_IsForagedIn_Association -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantPollen_IsForagedIn_Association">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plant_HasForagingAssociation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantPollen_IsForagedIn_Interaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantPollen_IsForagedIn_Interaction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plant_HasForagingInteraction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantPollen_IsTransferredIn_Association -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantPollen_IsTransferredIn_Association">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plant_HasAssociation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantPollen_IsTransferredIn_Interaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plantPollen_IsTransferredIn_Interaction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plant_HasAssociation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plant_HasAssociation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plant_HasForagingAssociation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plant_HasForagingAssociation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plant_HasAssociation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plant_HasForagingInteraction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#plant_HasForagingInteraction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#represents -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#represents"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#representsRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#representsRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#represents"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#representsSpecies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#representsSpecies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#representsSpecies">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#represents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#SpatialBoundingBox -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#SpatialBoundingBox">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#InteractionNetwork"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#TemporalInterval -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#TemporalInterval">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#InteractionNetwork"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregatedBehaviour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregatedBehaviour"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfArthropodIndividualsBySpecies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfArthropodIndividualsBySpecies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfIndividualsBySpecies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfIndividualsBySpecies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfIndividualsBySpecies"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfPlantIndividualsBySpecies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfPlantIndividualsBySpecies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfIndividualsBySpecies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ArthropodPopulationSample -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ArthropodPopulationSample">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfArthropodIndividualsBySpecies"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PopulationSample"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#EcologicalInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#EcologicalInteraction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#FlowerAssociationBehaviour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#FlowerAssociationBehaviour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantAssociationBehaviour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#FlowerVisitingBehaviour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#FlowerVisitingBehaviour">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasArthropod"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfArthropodIndividualsBySpecies"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPlant"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfPlantIndividualsBySpecies"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantVisitingBehaviour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ForagingBehaviour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ForagingBehaviour">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasForagingArthropod"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfArthropodIndividualsBySpecies"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasForagingPlant"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfPlantIndividualsBySpecies"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#FlowerVisitingBehaviour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ForagingEcologicalInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ForagingEcologicalInteraction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasForagingArthropod"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ArthropodPopulationSample"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasForagingPlant"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#InteractionNetwork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#InteractionNetwork"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#InteractionNetworkArc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#InteractionNetworkArc"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#InteractionNetworkNode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#InteractionNetworkNode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#MutualisticEcologicalInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#MutualisticEcologicalInteraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#EcologicalInteraction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NectarForaging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NectarForaging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NectarOrPollenForaging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NectarForagingEcologicalInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NectarForagingEcologicalInteraction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasNectarForaging_Arthropod"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ArthropodPopulationSample"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasNectarForaging_Plant"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ForagingEcologicalInteraction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NectarOrPollenForaging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NectarOrPollenForaging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ForagingBehaviour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NonForagingBehaviour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NonForagingBehaviour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#FlowerVisitingBehaviour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NonForagingEcologicalInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NonForagingEcologicalInteraction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForaging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForaging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilOrPollenForaging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForagingEcologicalInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForagingEcologicalInteraction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasOilForaging_Arthropod"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ArthropodPopulationSample"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasOilForaging_Plant"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ForagingEcologicalInteraction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilOrPollenForaging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilOrPollenForaging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ForagingBehaviour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantAnimalMutualisticEcologicalInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantAnimalMutualisticEcologicalInteraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#MutualisticEcologicalInteraction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantArthropodMutualisticEcologicalInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantArthropodMutualisticEcologicalInteraction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#hasInteractionPart"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ForagingEcologicalInteraction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#hasInteractionPart"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PollenTransferEcologicalInteraction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantAnimalMutualisticEcologicalInteraction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantAssociationBehaviour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantAssociationBehaviour">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasArthropod"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfArthropodIndividualsBySpecies"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPlant"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfPlantIndividualsBySpecies"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregatedBehaviour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfPlantIndividualsBySpecies"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PopulationSample"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantVisitingBehaviour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantVisitingBehaviour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantAssociationBehaviour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PollenForaging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PollenForaging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NectarOrPollenForaging"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilOrPollenForaging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PollenForagingEcologicalInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PollenForagingEcologicalInteraction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasPollenForaging_Arthropod"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ArthropodPopulationSample"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasPollenForaging_Plant"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ForagingEcologicalInteraction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PollenTransfer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PollenTransfer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPollenTransfer_Arthropod"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfArthropodIndividualsBySpecies"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#association_HasPollenTransfer_Plant"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggregationOfPlantIndividualsBySpecies"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NonForagingBehaviour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PollenTransferEcologicalInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PollenTransferEcologicalInteraction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasPollenTransfer_Arthropod"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ArthropodPopulationSample"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#interaction_HasPollenTransfer_Plant"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NonForagingEcologicalInteraction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PopulationSample -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PopulationSample"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#A_calendula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#A_calendula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggNecForBeh10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggNecForBeh10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NectarForaging"/>
+        <association_HasNectarForaging_Arthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_peringueyi"/>
+        <association_HasNectarForaging_Plant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#C_deflexum"/>
+        <representsRelation rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arc1_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggNecForBeh11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggNecForBeh11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NectarForaging"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggNecForBeh12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggNecForBeh12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NectarForaging"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggNecForBeh13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggNecForBeh13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NectarForaging"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggNecForBeh9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggNecForBeh9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NectarForaging"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggOilForBeh1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggOilForBeh1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForaging"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggOilForBeh2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggOilForBeh2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForaging"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggOilForBeh3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggOilForBeh3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForaging"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggOilForBeh4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggOilForBeh4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForaging"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggOilForBeh5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggOilForBeh5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForaging"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggOilForBeh6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggOilForBeh6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForaging"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggOilForBeh7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggOilForBeh7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForaging"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggOilForBeh8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#AggOilForBeh8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForaging"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#B_nutans -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#B_nutans">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#C_deflexum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#C_deflexum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#D_cucullata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#D_cucullata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#D_pluvialis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#D_pluvialis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#D_purpurata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#D_purpurata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#G_splendidissima -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#G_splendidissima">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#IN1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#IN1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#InteractionNetwork"/>
+        <has rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#node1"/>
+        <has rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#node2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NecForEcolInt10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NecForEcolInt10">
+        <interaction_HasNectarForaging_Arthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_macgregori"/>
+        <interaction_HasNectarForaging_Plant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#A_calendula"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NecForEcolInt11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NecForEcolInt11">
+        <interaction_HasNectarForaging_Arthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_macgregori"/>
+        <interaction_HasNectarForaging_Plant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#G_splendidissima"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NecForEcolInt12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NecForEcolInt12">
+        <interaction_HasNectarForaging_Arthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_macgregori"/>
+        <interaction_HasNectarForaging_Plant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#D_pluvialis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NecForEcolInt13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NecForEcolInt13">
+        <interaction_HasNectarForaging_Arthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_macgregori"/>
+        <interaction_HasNectarForaging_Plant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#S_littoreus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NecForEcolInt9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#NecForEcolInt9">
+        <interaction_HasNectarForaging_Arthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_macgregori"/>
+        <interaction_HasNectarForaging_Plant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#B_nutans"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForEcolInt1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForEcolInt1">
+        <interaction_HasOilForaging_Arthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_peringueyi"/>
+        <interaction_HasOilForaging_Plant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#P_alatum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForEcolInt2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForEcolInt2">
+        <interaction_HasOilForaging_Arthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_peringueyi"/>
+        <interaction_HasOilForaging_Plant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#D_cucullata"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForEcolInt3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForEcolInt3">
+        <interaction_HasOilForaging_Arthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_peringueyi"/>
+        <interaction_HasOilForaging_Plant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#P_catholicum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForEcolInt4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForEcolInt4">
+        <interaction_HasOilForaging_Arthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_peringueyi"/>
+        <interaction_HasOilForaging_Plant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#P_volucris"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForEcolInt5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForEcolInt5">
+        <interaction_HasOilForaging_Arthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_peringueyi"/>
+        <interaction_HasOilForaging_Plant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#P_hallii"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForEcolInt6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForEcolInt6">
+        <interaction_HasOilForaging_Arthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_macgregori"/>
+        <interaction_HasOilForaging_Plant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#P_hallii"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForEcolInt7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForEcolInt7">
+        <interaction_HasOilForaging_Arthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_macgregori"/>
+        <interaction_HasOilForaging_Plant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#C_deflexum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForEcolInt8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#OilForEcolInt8">
+        <interaction_HasOilForaging_Arthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_macgregori"/>
+        <interaction_HasOilForaging_Plant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#D_purpurata"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#P_alatum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#P_alatum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#P_catholicum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#P_catholicum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#P_hallii -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#P_hallii">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#P_volucris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#P_volucris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PollTransEcolInt1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PollTransEcolInt1">
+        <interaction_HasPollenTransfer_Arthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_macgregori"/>
+        <interaction_HasPollenTransfer_Plant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#P_catholicum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_macgregori -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_macgregori">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ArthropodPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_peringueyi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_peringueyi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#ArthropodPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#S_littoreus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#S_littoreus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#PlantPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arc1_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#arc1_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#InteractionNetworkArc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#node1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#node1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#InteractionNetworkNode"/>
+        <representsSpecies rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#C_deflexum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#node2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#node2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#InteractionNetworkNode"/>
+        <representsSpecies rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/8/untitled-ontology-18#R_peringueyi"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

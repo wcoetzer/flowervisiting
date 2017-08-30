@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#"
+     xml:base="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255"
+     xmlns:untitled-ontology-255="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#hasForagingArthropod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#hasForagingArthropod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#hasForagingPlant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#hasForagingPlant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#hasPollenTransferArthropod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#hasPollenTransferArthropod">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#hasPollenTransferPlant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#hasPollenTransferPlant"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ArthropodPopulationSample -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ArthropodPopulationSample">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantPopulationSample"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ForagingEcologicalInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ForagingEcologicalInteraction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#hasForagingArthropod"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ArthropodPopulationSample"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#hasForagingPlant"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantPopulationSample"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantArthropodMutualisticEcologicalInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantArthropodMutualisticEcologicalInteraction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#hasForagingArthropod"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ArthropodPopulationSample"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#hasForagingPlant"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantPopulationSample"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#hasPollenTransferArthropod"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ArthropodPopulationSample"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#hasPollenTransferPlant"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantPopulationSample"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantPopulationSample -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantPopulationSample"/>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PollenTransferEcologicalInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PollenTransferEcologicalInteraction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#hasPollenTransferArthropod"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ArthropodPopulationSample"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#hasPollenTransferPlant"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantPopulationSample"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ArthropodPopulationSample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ArthropodPopulationSample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ArthropodPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ArthropodPopulationSample2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ArthropodPopulationSample2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ArthropodPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#EcolInteraction1f -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#EcolInteraction1f">
+        <hasForagingArthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ArthropodPopulationSample1"/>
+        <hasForagingPlant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantPopulationSample1"/>
+        <hasPollenTransferArthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ArthropodPopulationSample1"/>
+        <hasPollenTransferPlant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantPopulationSample1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#EcolInteraction1p -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#EcolInteraction1p">
+        <hasPollenTransferArthropod rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#ArthropodPopulationSample1"/>
+        <hasPollenTransferPlant rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantPopulationSample1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantPopulationSample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantPopulationSample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantPopulationSample"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantPopulationSample2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantPopulationSample2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/w.coetzer/ontologies/2016/10/untitled-ontology-255#PlantPopulationSample"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
