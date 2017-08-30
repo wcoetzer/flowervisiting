@@ -1,0 +1,240 @@
+Tue Aug 29 13:44:05 2017
+
+
+Moral links:
+
+    Marrying hasPlantParticipant_hasFloralReward_1 and hasPlantParticipant_hasFloralReward_2
+    Marrying plantParticipatesIn and hasPlantParticipant_hasFloralReward_1_1
+    Marrying hasArthropodParticipant_hasSpecialisation and hasArthropodParticipant_hasSex
+    Marrying hasArthropodParticipant_hasArthropodSpecies_isFlowerVisitor and hasArthropodParticipant_hasSex
+    Marrying hasPlantParticipant_hasFloralReward and hasArthropodParticipant_hasArthropodSpecies_isFlowerVisitor
+    Marrying hasPlantParticipant_hasFloralReward and hasArthropodParticipant_hasSex
+    Marrying hasPlantParticipant_hasFlower and plantParticipatesIn
+    Marrying hasPlantParticipant_hasFlower and hasPlantParticipant_hasFloralReward_2
+    Marrying hasPlantParticipant_hasFlower and hasPlantParticipant_hasFloralReward_1
+    Marrying hasArthropodParticipant_hasForagingBehaviour and hasArthropodParticipant_hasSpecialisation
+    Marrying flowerParticipatesIn and hasArthropodParticipant_hasArthropodSpecies_isFlowerVisitor
+    Marrying flowerParticipatesIn and hasArthropodParticipant_hasSex
+    Marrying flowerParticipatesIn and hasPlantParticipant_hasFloralReward
+
+
+Triangulating prime component with 2 members:
+    hasPlantParticipant_hasFloralReward_1,
+    hasPlantParticipant_hasPlantSpecies_hasPollinationSystem
+This component is a clique of cost 21
+
+Triangulating prime component with 4 members:
+    hasArthropodParticipant_hasSex, hasArthropodParticipant_hasSpecialisation,
+    hasArthropodParticipant_hasForagingBehaviour_isPollenTransferBehaviour,
+    hasArthropodParticipant_hasForagingBehaviour
+This component is a clique of cost 60
+
+Triangulating prime component with 4 members:
+    hasPlantParticipant_hasFloralReward_2,
+    hasPlantParticipant_hasFloralReward_1, hasPlantParticipant_hasFloralReward,
+    hasPlantParticipant_hasFlower
+This component is a clique of cost 686
+
+Triangulating prime component with 5 members:
+    hasArthropodParticipant_hasSex,
+    hasArthropodParticipant_hasArthropodSpecies_isFlowerVisitor,
+    hasPlantParticipant_hasFloralReward,
+    hasArthropodParticipant_hasForagingBehaviour, flowerParticipatesIn
+This component is a clique of cost 1120
+
+Triangulating prime component with 3 members:
+    hasPlantParticipant_hasFloralReward, hasPlantParticipant_hasFlower,
+    flowerParticipatesIn
+This component is a clique of cost 28
+
+Triangulating prime component with 4 members:
+    hasPlantParticipant_hasFloralReward_1_1, plantParticipatesIn,
+    hasPlantParticipant_hasFlower, flowerParticipatesIn
+This component is a clique of cost 84
+
+
+Total cost of triangulation for all prime components is 1999
+
+
+Elimination sequence:
+
+    hasArthropodParticipant_hasForagingBehaviour_isPollenTransferBehaviour
+    hasArthropodParticipant_hasSpecialisation
+    hasArthropodParticipant_hasArthropodSpecies_isFlowerVisitor
+    hasArthropodParticipant_hasForagingBehaviour
+    hasArthropodParticipant_hasSex
+    plantParticipatesIn
+    hasPlantParticipant_hasFloralReward_1_1
+    flowerParticipatesIn
+    hasPlantParticipant_hasFloralReward_2
+    hasPlantParticipant_hasFlower
+    hasPlantParticipant_hasFloralReward
+    hasPlantParticipant_hasPlantSpecies_hasPollinationSystem
+    hasPlantParticipant_hasFloralReward_1
+
+
+Cliques:
+
+Clique 6, 2 members, table size = 21:
+    hasPlantParticipant_hasFloralReward_1,
+    hasPlantParticipant_hasPlantSpecies_hasPollinationSystem
+
+Clique 5, 4 members, table size = 686:
+    hasPlantParticipant_hasFloralReward_1, hasPlantParticipant_hasFloralReward,
+    hasPlantParticipant_hasFlower, hasPlantParticipant_hasFloralReward_2
+
+Clique 4, 3 members, table size = 28:
+    hasPlantParticipant_hasFloralReward, hasPlantParticipant_hasFlower,
+    flowerParticipatesIn
+
+Clique 3, 4 members, table size = 84:
+    hasPlantParticipant_hasFlower, flowerParticipatesIn,
+    hasPlantParticipant_hasFloralReward_1_1, plantParticipatesIn
+
+Clique 2, 5 members, table size = 1120:
+    hasPlantParticipant_hasFloralReward, flowerParticipatesIn,
+    hasArthropodParticipant_hasSex,
+    hasArthropodParticipant_hasForagingBehaviour,
+    hasArthropodParticipant_hasArthropodSpecies_isFlowerVisitor
+
+Clique 1, 4 members, table size = 60:
+    hasArthropodParticipant_hasSex,
+    hasArthropodParticipant_hasForagingBehaviour,
+    hasArthropodParticipant_hasSpecialisation,
+    hasArthropodParticipant_hasForagingBehaviour_isPollenTransferBehaviour
+
+Total clique table size: 1999
+
+
+The junction forest:
+
+Creating junction tree with clique 6 as root ...
+
+Cliques 5 and 6 linked, separator has 1 member and table size = 7:
+    hasPlantParticipant_hasFloralReward_1
+
+Cliques 4 and 5 linked, separator has 2 members and table size = 14:
+    hasPlantParticipant_hasFloralReward, hasPlantParticipant_hasFlower
+
+Cliques 3 and 4 linked, separator has 2 members and table size = 4:
+    hasPlantParticipant_hasFlower, flowerParticipatesIn
+
+Cliques 2 and 4 linked, separator has 2 members and table size = 14:
+    hasPlantParticipant_hasFloralReward, flowerParticipatesIn
+
+Cliques 1 and 2 linked, separator has 2 members and table size = 10:
+    hasArthropodParticipant_hasSex,
+    hasArthropodParticipant_hasForagingBehaviour
+
+
+Assignment of potentials to cliques:
+
+    Node hasPlantParticipant_hasFloralReward_2 assigned to clique 5
+    Node hasPlantParticipant_hasFloralReward_1_1 assigned to clique 3
+    Node hasPlantParticipant_hasFloralReward_1 assigned to clique 6
+    Node plantParticipatesIn assigned to clique 3
+    Node hasPlantParticipant_hasPlantSpecies_hasPollinationSystem assigned to clique 6
+    Node hasArthropodParticipant_hasSex assigned to clique 1
+    Node hasArthropodParticipant_hasSpecialisation assigned to clique 1
+    Node hasArthropodParticipant_hasForagingBehaviour_isPollenTransferBehaviour assigned to clique 1
+    Node hasArthropodParticipant_hasArthropodSpecies_isFlowerVisitor assigned to clique 2
+    Node hasPlantParticipant_hasFloralReward assigned to clique 5
+    Node hasPlantParticipant_hasFlower assigned to clique 3
+    Node hasArthropodParticipant_hasForagingBehaviour assigned to clique 2
+    Node flowerParticipatesIn assigned to clique 3
+
+
+Checking conditional probability potentials:
+
+Warning: Conditional distributions for hasArthropodParticipant_hasForagingBehaviour sum to different values:
+    min = 1
+    max = 100
+
+    No error found
+
+
+Beliefs for chance nodes:
+
+    hasPlantParticipant_hasFloralReward_2:
+	OilAndPollen 0.142857
+	NectarAndPollen 0.357143
+	PoricidalPollenNoReward 0.0714286
+	NonPoricidalPollenNoReward 0.0714286
+	NoFloralProduct 0.0714286
+	OilAndPollinia 0.142857
+	NectarAndPollinia 0.142857
+
+    hasPlantParticipant_hasFloralReward_1_1:
+	OilAndPollen 0.142857
+	NectarAndPollen 0.357143
+	PoricidalPollenNoReward 0.0714286
+	NonPoricidalPollenNoReward 0.0714286
+	NoFloralProduct 0.0714286
+	OilAndPollinia 0.142857
+	NectarAndPollinia 0.142857
+
+    hasPlantParticipant_hasFloralReward_1:
+	OilAndPollen 0.142857
+	NectarAndPollen 0.357143
+	PoricidalPollenNoReward 0.0714286
+	NonPoricidalPollenNoReward 0.0714286
+	NoFloralProduct 0.0714286
+	OilAndPollinia 0.142857
+	NectarAndPollinia 0.142857
+
+    plantParticipatesIn:
+	PlantAssociationEvent 0.459459
+	FlowerAssociationEvent 0.0810811
+	PlantVisitingEvent 0.459459
+
+    hasPlantParticipant_hasPlantSpecies_hasPollinationSystem:
+	BioticPollinationSystem 0.459459
+	AbioticPollinationSystem 0.0810811
+	CombinationPollinationSystem 0.459459
+
+    hasArthropodParticipant_hasSex:
+	Male       0.5
+	Female     0.5
+
+    hasArthropodParticipant_hasSpecialisation:
+	High       0.6
+	Medium     0.2
+	Low        0.2
+
+    hasArthropodParticipant_hasForagingBehaviour_isPollenTransferBehaviour:
+	PollenTrSituation 0.381092
+	Not_PollenTrSituation 0.618908
+
+    hasArthropodParticipant_hasArthropodSpecies_isFlowerVisitor:
+	NonVibratoryPollenForager 0.0769231
+	OilOrPollenForager 0.0769231
+	NectarOrPollenForager 0.461538
+	PollenOnlyForagerVibratory 0.0769231
+	IncidentalFlowerVisitor 0.0769231
+	OilForager 0.0769231
+	NectarForager 0.0769231
+	NectarRobberOrThief 0.0769231
+
+    hasPlantParticipant_hasFloralReward:
+	OilAndPollen 0.142857
+	NectarAndPollen 0.357143
+	PoricidalPollenNoReward 0.0714286
+	NonPoricidalPollenNoReward 0.0714286
+	NoFloralProduct 0.0714286
+	OilAndPollinia 0.142857
+	NectarAndPollinia 0.142857
+
+    hasPlantParticipant_hasFlower:
+	True       0.6
+	False      0.4
+
+    hasArthropodParticipant_hasForagingBehaviour:
+	OilForagingBehaviour 0.0267857
+	NectarForagingBehaviour 0.167857
+	VibratoryPollenForagingBehaviour 0.0309066
+	NonVibratoryPollenForagingBehaviour 0.129533
+	NotForagingForAFloralProduct 0.644918
+
+    flowerParticipatesIn:
+	True       0.64
+	False      0.36
