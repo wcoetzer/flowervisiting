@@ -1,0 +1,1304 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/willem/ontologies/2016/11/IPA"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/willem/ontologies/2016/11/IPA">
+    <Prefix name="" IRI="http://www.semanticweb.org/willem/ontologies/2016/11/IPA"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2016-09-13:Added PlantAssociationEvent which will be input into the BN </Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2015-11-03: This ontology combines the two levels with which we engage with the collected specimen data in a database. We capture concepts that represent the database data so that we can import the data from the database intothe ontology. In addition we have to capture the concepts representing the implicit knowledge used by biologists to decide whether possible pollination occurred so that our inference system can draw the same conclusions from the database data.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2016-09-19: Meeting on ontology and bayesian link. The current proposal is that an Interaction idInformedBy an event - loosely connected. The ontology can infer that an event took place, but whether it is an interaction is inferred by the bayesian network. In previous versions of the ontology we has a hasPart (hasInteractionPart) association betwen interaction and event. 
+
+We still need to rrefine the event defintion by adding the spatial temporal aspects and we need to add the hierarchy of events.</Literal>
+    </Annotation>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#NotForagingForAFloralProduct"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtherInsecta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NoFloralProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasPollenAvailable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPlantSpecies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NectarAndPollen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Species"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taxon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighSpecialisation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Disperis_cucullata"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#informs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#NonPoricidalPollenNoReward"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTaxonName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlowerAssociationEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBasisForID"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasForagingBehaviour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#NectarForagingBehaviour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NectarForager"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFlower"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hermaphroditic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasFloralProductCombination"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FloweringTimeFalse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#OilOrPollenForager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Situation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Entomophily"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Masarinae"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasSex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#ArthropodOrganism1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#PlantOrganism1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PollinationSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#Multi-OrganismBehavior"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#isInformedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PoricidalPollenNoReward"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Melittidae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArthropodSpecies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#NectarAndPollen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasPollinationSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#AbioticPollinationMechanism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Behavior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOrganism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#NectarForagingBehaviour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantArthropodBehavior"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PollenForagingBehaviour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Androdioecy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#behaviourOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlowerUtilizingEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FloralProductCombination"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasEarliestFloweringMonth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Male"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOccurrence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Protandry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOccurrence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasPlantParticipant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColletidaeOrMelittidaeOrMasarinae"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFloralProductOccurrence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Dioecy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Date1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#OilForagingBehaviour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ForagingBehaviour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OilAndPollen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumSpecialisation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantArthropodBehavior1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpeciesSpecialisation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtherAnthophila"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubfamily"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#BFO:realized_In"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FloweringBeginMonth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#BFO:bearer_of"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantAssociationEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flower"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasFlowerVisitorType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonForagingBehaviour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodSex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#VibratoryPollenForager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowSpecialisation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantAssociationEvent1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasPlantSexualSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasArthropodGroup"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pterygodium_alatum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FloweringTimeTrue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlantSpecies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OilOrPollinaria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Identification1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NectarAndPollinaria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Melittidae"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOccurrence1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimultaneousHermaphroditism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Identification1p"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#DSW:Occurrence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumSpecialisation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pterygodium_inversum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FlowerVisitingEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#SpeciesSpecialisation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OilAndPollinaria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pterygodium_catholicum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#VectorPollinationMechanism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantVisitingEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DSW:Identification"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Monoecy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DSW:CatalogNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ForagingBehaviour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#SeedPlantSpecies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OilForager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Date"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#BFO:has_Part"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBehaviour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOrganism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ColletidaeOrMelittidaeOrMasarinae"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Female"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#OilOrPollen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Protogyny"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArthropodParticipant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ambophily"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlantSexualSystem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#IncidentalFlowerVisitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colletidae"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#toSpeciesName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gynodioecy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEvidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PollenTransferSituation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P_hallii"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HighSpecialisation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#NonVibratoryPollenForagingBehaviour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hermaphroditism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FloweringEndMonth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pterygodium_volucris"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#occursAt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FlowerFalse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasLatestFloweringMonth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Secretion_Absent_Pollen_Present"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#VibratoryPollenForagingBehaviour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#Organism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ctenoplectra_albolimbata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TimeAndPlace1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#AfricanArthropodSpecies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#arthropodParticipatesIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NectarRobberOrThief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowSpecialisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FlowerVisitorType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#DSW:occurrence_of"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FloralProductOccurrence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Secretion_Absent_Pollinaria_Present"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PollenForagingBehaviour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FlowerTrue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CatalogNumber1p"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FloweringTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArthropodSpecies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFamily"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDerivative"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCatalogNumber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#NonVibratoryPollenForager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOccurrence1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#R_peringueyi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#OilForagingBehaviour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Anemophily"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CatalogNumber1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#NectarOrPollenForager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeAndPlace"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Momordica_trifoliata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtherArthropoda"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOccurrence"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOrganism"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#occursAt"/>
+                <Class IRI="#TimeAndPlace"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantArthropodBehavior"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#isInformedBy"/>
+            <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantAssociationEvent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantAssociationEvent"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasPlantParticipant"/>
+                <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOccurrence"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasArthropodParticipant"/>
+                <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOccurrence"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOccurrence"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOrganism"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#occursAt"/>
+                <Class IRI="#TimeAndPlace"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#SpeciesSpecialisation"/>
+        <ObjectUnionOf>
+            <Class IRI="#HighSpecialisation"/>
+            <Class IRI="#LowSpecialisation"/>
+            <Class IRI="#MediumSpecialisation"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#DSW:Occurrence"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#Organism"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#occursAt"/>
+                <Class IRI="#TimeAndPlace"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ColletidaeOrMelittidaeOrMasarinae"/>
+        <Class IRI="#HighSpecialisation"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#AbioticPollinationMechanism"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PollinationSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#AfricanArthropodSpecies"/>
+        <Class IRI="#Species"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOccurrence"/>
+        <Class IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#DSW:Occurrence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOrganism"/>
+        <Class IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#Organism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOrganism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasSex"/>
+            <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodSex"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOrganism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasArthropodSpecies"/>
+            <Class IRI="#ArthropodSpecies"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FlowerVisitingEvent"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantVisitingEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ForagingBehaviour"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#NectarForagingBehaviour"/>
+        <Class IRI="#ForagingBehaviour"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#OilForagingBehaviour"/>
+        <Class IRI="#ForagingBehaviour"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantAssociationEvent"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOccurrence"/>
+        <Class IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#DSW:Occurrence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOrganism"/>
+        <Class IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#Organism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantVisitingEvent"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantAssociationEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PollenTransferSituation"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#SeedPlantSpecies"/>
+        <Class IRI="#Species"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#VectorPollinationMechanism"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PollinationSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#Multi-OrganismBehavior"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Behavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArthropodSpecies"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#AfricanArthropodSpecies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArthropodSpecies"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasArthropodGroup"/>
+            <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodGroup"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colletidae"/>
+        <Class IRI="#ColletidaeOrMelittidaeOrMasarinae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlowerAssociationEvent"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantAssociationEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlowerUtilizingEvent"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FlowerVisitingEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ForagingBehaviour"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantArthropodBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighSpecialisation"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#SpeciesSpecialisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowSpecialisation"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#SpeciesSpecialisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Masarinae"/>
+        <Class IRI="#ColletidaeOrMelittidaeOrMasarinae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumSpecialisation"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#SpeciesSpecialisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Melittidae"/>
+        <Class IRI="#ColletidaeOrMelittidaeOrMasarinae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonForagingBehaviour"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantArthropodBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlantSpecies"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#SeedPlantSpecies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PollenForagingBehaviour"/>
+        <Class IRI="#ForagingBehaviour"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOccurrence"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOccurrence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOrganism"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOrganism"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighSpecialisation"/>
+        <Class IRI="#LowSpecialisation"/>
+        <Class IRI="#MediumSpecialisation"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PollinationSystem"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Anemophily"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOccurrence"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOccurrence1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PollinationSystem"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Entomophily"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodSex"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Female"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FlowerVisitorType"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#IncidentalFlowerVisitor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodSex"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Male"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FloralProductOccurrence"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#NectarAndPollen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ForagingBehaviour"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#NectarForagingBehaviour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FlowerVisitorType"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#NectarOrPollenForager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FloralProductOccurrence"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#NonPoricidalPollenNoReward"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FlowerVisitorType"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#NonVibratoryPollenForager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ForagingBehaviour"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#NonVibratoryPollenForagingBehaviour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ForagingBehaviour"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#NotForagingForAFloralProduct"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ForagingBehaviour"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#OilForagingBehaviour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FloralProductOccurrence"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#OilOrPollen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FlowerVisitorType"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#OilOrPollenForager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOccurrence"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOccurrence1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FloralProductOccurrence"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PoricidalPollenNoReward"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FlowerVisitorType"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#VibratoryPollenForager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ForagingBehaviour"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#VibratoryPollenForagingBehaviour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PollinationSystem"/>
+        <NamedIndividual IRI="#Ambophily"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DSW:CatalogNumber"/>
+        <NamedIndividual IRI="#CatalogNumber1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DSW:CatalogNumber"/>
+        <NamedIndividual IRI="#CatalogNumber1p"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ArthropodSpecies"/>
+        <NamedIndividual IRI="#Ctenoplectra_albolimbata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Date"/>
+        <NamedIndividual IRI="#Date1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PlantSpecies"/>
+        <NamedIndividual IRI="#Disperis_cucullata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Flower"/>
+        <NamedIndividual IRI="#FlowerFalse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Flower"/>
+        <NamedIndividual IRI="#FlowerTrue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FloweringTime"/>
+        <NamedIndividual IRI="#FloweringTimeFalse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FloweringTime"/>
+        <NamedIndividual IRI="#FloweringTimeTrue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PlantSexualSystem"/>
+        <NamedIndividual IRI="#Hermaphroditic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#SpeciesSpecialisation"/>
+        <NamedIndividual IRI="#HighSpecialisation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DSW:Identification"/>
+        <NamedIndividual IRI="#Identification1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DSW:Identification"/>
+        <NamedIndividual IRI="#Identification1p"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#SpeciesSpecialisation"/>
+        <NamedIndividual IRI="#LowSpecialisation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#SpeciesSpecialisation"/>
+        <NamedIndividual IRI="#MediumSpecialisation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ColletidaeOrMelittidaeOrMasarinae"/>
+        <NamedIndividual IRI="#Melittidae"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PlantSpecies"/>
+        <NamedIndividual IRI="#Momordica_trifoliata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FloralProductCombination"/>
+        <NamedIndividual IRI="#NectarAndPollen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FloralProductOccurrence"/>
+        <NamedIndividual IRI="#NectarAndPollinaria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FloralProductCombination"/>
+        <NamedIndividual IRI="#NectarAndPollinaria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FlowerVisitorType"/>
+        <NamedIndividual IRI="#NectarForager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FlowerVisitorType"/>
+        <NamedIndividual IRI="#NectarRobberOrThief"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FloralProductCombination"/>
+        <NamedIndividual IRI="#OilAndPollen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FloralProductCombination"/>
+        <NamedIndividual IRI="#OilAndPollinaria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FlowerVisitorType"/>
+        <NamedIndividual IRI="#OilForager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FloralProductOccurrence"/>
+        <NamedIndividual IRI="#OilOrPollinaria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodGroup"/>
+        <NamedIndividual IRI="#OtherAnthophila"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodGroup"/>
+        <NamedIndividual IRI="#OtherArthropoda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodGroup"/>
+        <NamedIndividual IRI="#OtherInsecta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PlantSpecies"/>
+        <NamedIndividual IRI="#P_hallii"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ForagingBehaviour"/>
+        <NamedIndividual IRI="#PollenForagingBehaviour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PlantSpecies"/>
+        <NamedIndividual IRI="#Pterygodium_alatum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PlantSpecies"/>
+        <NamedIndividual IRI="#Pterygodium_catholicum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PlantSpecies"/>
+        <NamedIndividual IRI="#Pterygodium_inversum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PlantSpecies"/>
+        <NamedIndividual IRI="#Pterygodium_volucris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ArthropodSpecies"/>
+        <NamedIndividual IRI="#R_peringueyi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FloralProductCombination"/>
+        <NamedIndividual IRI="#Secretion_Absent_Pollen_Present"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FloralProductCombination"/>
+        <NamedIndividual IRI="#Secretion_Absent_Pollinaria_Present"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeAndPlace"/>
+        <NamedIndividual IRI="#TimeAndPlace1"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#ArthropodOrganism1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#PlantOrganism1"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasSex"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOccurrence1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Female"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasArthropodSpecies"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOccurrence1"/>
+        <NamedIndividual IRI="#R_peringueyi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCatalogNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOccurrence1"/>
+        <NamedIndividual IRI="#CatalogNumber1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFamily"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOccurrence1"/>
+        <NamedIndividual IRI="#Melittidae"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#occursAt"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOccurrence1"/>
+        <NamedIndividual IRI="#TimeAndPlace1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#isInformedBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantArthropodBehavior1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantAssociationEvent1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasPlantParticipant"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantAssociationEvent1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOccurrence1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasArthropodParticipant"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantAssociationEvent1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOccurrence1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFlower"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOccurrence1"/>
+        <NamedIndividual IRI="#FlowerTrue"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlantSpecies"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOccurrence1"/>
+        <NamedIndividual IRI="#P_hallii"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDerivative"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#ArthropodOrganism1"/>
+        <NamedIndividual IRI="#CatalogNumber1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDerivative"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#PlantOrganism1"/>
+        <NamedIndividual IRI="#CatalogNumber1p"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBasisForID"/>
+        <NamedIndividual IRI="#CatalogNumber1"/>
+        <NamedIndividual IRI="#Identification1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBasisForID"/>
+        <NamedIndividual IRI="#CatalogNumber1p"/>
+        <NamedIndividual IRI="#Identification1p"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasFlowerVisitorType"/>
+        <NamedIndividual IRI="#Ctenoplectra_albolimbata"/>
+        <NamedIndividual IRI="#OilForager"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasFloralProductCombination"/>
+        <NamedIndividual IRI="#Disperis_cucullata"/>
+        <NamedIndividual IRI="#OilOrPollinaria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#toSpeciesName"/>
+        <NamedIndividual IRI="#Identification1"/>
+        <NamedIndividual IRI="#R_peringueyi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#toSpeciesName"/>
+        <NamedIndividual IRI="#Identification1p"/>
+        <NamedIndividual IRI="#P_hallii"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasFloralProductCombination"/>
+        <NamedIndividual IRI="#Momordica_trifoliata"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#OilOrPollen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasEarliestFloweringMonth"/>
+        <NamedIndividual IRI="#P_hallii"/>
+        <NamedIndividual IRI="#8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasFloralProductCombination"/>
+        <NamedIndividual IRI="#P_hallii"/>
+        <NamedIndividual IRI="#OilAndPollinaria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasLatestFloweringMonth"/>
+        <NamedIndividual IRI="#P_hallii"/>
+        <NamedIndividual IRI="#10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasPlantSexualSystem"/>
+        <NamedIndividual IRI="#P_hallii"/>
+        <NamedIndividual IRI="#Hermaphroditic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasPollinationSystem"/>
+        <NamedIndividual IRI="#P_hallii"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Entomophily"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasFloralProductCombination"/>
+        <NamedIndividual IRI="#Pterygodium_alatum"/>
+        <NamedIndividual IRI="#OilOrPollinaria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasFloralProductCombination"/>
+        <NamedIndividual IRI="#Pterygodium_catholicum"/>
+        <NamedIndividual IRI="#OilOrPollinaria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasFloralProductCombination"/>
+        <NamedIndividual IRI="#Pterygodium_inversum"/>
+        <NamedIndividual IRI="#OilOrPollinaria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasFloralProductCombination"/>
+        <NamedIndividual IRI="#Pterygodium_volucris"/>
+        <NamedIndividual IRI="#OilOrPollinaria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasFlowerVisitorType"/>
+        <NamedIndividual IRI="#R_peringueyi"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#OilOrPollenForager"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFamily"/>
+        <NamedIndividual IRI="#R_peringueyi"/>
+        <NamedIndividual IRI="#Melittidae"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasForagingBehaviour"/>
+        <ObjectProperty IRI="#hasBehaviour"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#BFO:bearer_of"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#isInformedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#occursAt"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#isInformedBy"/>
+        <ObjectProperty IRI="#informs"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#arthropodParticipatesIn"/>
+        <ObjectProperty IRI="#hasArthropodParticipant"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#behaviourOf"/>
+        <ObjectProperty IRI="#hasBehaviour"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasArthropodGroup"/>
+        <Class IRI="#ArthropodSpecies"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasEarliestFloweringMonth"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOrganism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasFloralProductCombination"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOrganism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasFlowerVisitorType"/>
+        <Class IRI="#ArthropodSpecies"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasForagingBehaviour"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOrganism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasLatestFloweringMonth"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOrganism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasPlantSexualSystem"/>
+        <Class IRI="#PlantSpecies"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasPollenAvailable"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PlantOrganism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasPollinationSystem"/>
+        <Class IRI="#PlantSpecies"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasSex"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodOrganism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasArthropodGroup"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasEarliestFloweringMonth"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FloweringBeginMonth"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasFloralProductCombination"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FloralProductOccurrence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasFlowerVisitorType"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FlowerVisitorType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasForagingBehaviour"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ForagingBehaviour"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasLatestFloweringMonth"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#FloweringEndMonth"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasPollinationSystem"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#PollinationSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#hasSex"/>
+        <Class IRI="http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#ArthropodSex"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#Behavior</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#BFO:has_Part</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2016-09-12: http://www.ontobee.org/ontology/RO?iri=http://purl.obolibrary.org/obo/BFO_0000051
+
+editor note: Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.) A continuant cannot have an occurrent as part: use &apos;participates in&apos;. An occurrent cannot have a continuant as part: use &apos;has participant&apos;. An immaterial entity cannot have a material entity as part: use &apos;location of&apos;. An independent continuant cannot have a specifically dependent continuant as part: use &apos;bearer of&apos;. A specifically dependent continuant cannot have an independent continuant as part: use &apos;inheres in&apos;.
+
+editor note: Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part.
+
+editor note: Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime
+
+alternative term: has_part
+
+example of usage: my body has part my brain (continuant parthood, two material entities); this year has part this day (occurrent parthood); my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)
+
+temporal interpretation: axiom holds for all times</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/aurona/ontologies/2015/8/untitled-ontology-2#BFO:realized_In</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.ontobee.org/ontology/RO?iri=http://purl.obolibrary.org/obo/BFO_0000054
+
+comment: Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+
+alternative term: realized_in; is realized by
+elucidation: [copied from inverse property &apos;realizes&apos;] to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])
+example of usage: this fragility is realized in this shattering; this investigator role is realized in this investigation; this disease is realized in this disease course
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#Organism</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Explicit: Data in the database: This concept is linked to the row and column in the database / set of observations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/auronagerber/ontologies/2015/7/untitled-ontology-161#DSW:Occurrence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">From the DSW paper: http://www.semantic-web-journal.net/system/files/swj635.pdf
+ The Occurrence class originated from Darwin
+Core where it functioned effectively as a superclass
+of specimens and observations. However, in the
+email discussion it was clear that many participants
+favored a more abstract notion of Occurrence as *an
+organism at a time and place*.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TimeAndPlace</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">We created this placeholder to be consistent with the DSW defintion for Occurrence
+
+From the DSW paper: http://www.semantic-web-journal.net/system/files/swj635.pdf
+ The Occurrence class originated from Darwin
+Core where it functioned effectively as a superclass
+of specimens and observations. However, in the
+email discussion it was clear that many participants
+favored a more abstract notion of Occurrence as *an
+organism at a time and place*.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTaxonName</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Associate organism with relevant taxon name</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
